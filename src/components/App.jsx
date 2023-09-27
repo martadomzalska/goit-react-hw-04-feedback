@@ -30,24 +30,22 @@ export const App = () => {
   };
 
   return (
-    <div
-     className='.container'
-    >
+    <div className=".container">
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={['Good', 'Neutral', 'Bad']}
           onLeaveMessage={handleLeaveMessage}
         />
       </Section>
-      <Section title="Statistics"><Statistics
-        good={feedback.Good}
-        neutral={feedback.Neutral}
-        bad={feedback.Bad}
-        total={feedback.Good + feedback.Neutral + feedback.Bad}
-        positivePercentage={countPositivePercentage()}
-      ></Statistics></Section>
-
-      
+      <Section title="Statistics">
+        <Statistics
+          good={feedback.Good}
+          neutral={feedback.Neutral}
+          bad={feedback.Bad}
+          total={feedback.Good + feedback.Neutral + feedback.Bad}
+          positivePercentage={countPositivePercentage()}
+        ></Statistics>
+      </Section>
     </div>
   );
 };
