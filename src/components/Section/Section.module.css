@@ -1,0 +1,10 @@
+.headline {
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
